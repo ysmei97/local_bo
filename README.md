@@ -1,1 +1,1 @@
-# multimodal_Bayesian_optimization
+# Multimodal Bayesian Optimization Model Detecting Local Optima
