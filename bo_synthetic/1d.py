@@ -80,14 +80,6 @@ def animate(i):
     ax1.clear()
     ax2.clear()
     ax1.plot(x_sample, f(x_sample), 'k', label='f(x)')
-    # ax1.plot(0.905, f(0.905), 'go', ms=10)
-    '''
-    ax1.plot(x_sample, mean_value, 'b-', label='prediction')
-    ax1.fill(np.concatenate([x_sample, x_sample[::-1]]),
-             np.concatenate([np.array(mean_value) - 1.9600 * np.array(var_value),
-                             (np.array(mean_value) + 1.9600 * np.array(var_value))[::-1]]),
-             alpha=.3, fc='b', ec='None', label='CI')
-    '''
     ax2.plot(x_sample, acquisition_value, 'y', label='PI')
     ax1.plot(np.array(x_star)[:-1], f(np.array(x_star)[:-1]), 'bo', ms=10, label='observations')
     ax1.plot(np.array(x_star)[-1:], f(np.array(x_star))[-1:], 'ro', ms=10, label='new observation')
